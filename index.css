@@ -1,0 +1,84 @@
+html, body {
+    margin: 10;
+    padding: 10;
+    text-align: center;
+    background-image: url("../SNAKEGAME/assets/images/snake2.jpg") ;
+    /* background: linear-gradient(to right,yellow,green); */
+    /* background-blend-mode: color; */
+    background-size: cover;
+    
+}
+
+
+
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    border: double 2px blueviolet;
+    box-shadow: 2px 2px  1px green;
+    margin: 0 auto;
+    background:  aquamarine;
+    border-radius: 5px;
+    
+    
+}
+
+
+
+
+h1{
+    color: white;
+    font-family: lora;
+    font-weight: 700;
+}
+h2{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.square {
+    width: 30px;
+    height: 30px;
+}
+
+.snake {
+    background-color: green;
+}
+
+
+.apple {
+    background-color: orangered;
+    
+}
+
+#start{
+    border: none;
+    border-bottom: 2px solid green;
+    color: black;
+    font-weight: bold;
+    background: violet;
+}
+#stop, #play{
+    font-size:18px;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 2px solid green;
+    color: black;
+    font-weight: bold;
+    background: violet;
+    padding: 8px 20px;
+    
+    
+    
+}
+button:hover{
+    background: violet;
+}
+#play{
+    margin: 0 auto;
+}
