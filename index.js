@@ -13,7 +13,7 @@ let timerId = 0
 let highScore = 0
 let high = document.getElementById('high')
 const stop = document.getElementById('stop')
-const play = document.getElementById('play')
+// const play = document.getElementById('play')
 
 function createGrid() {
     
@@ -149,14 +149,15 @@ function control(e) {
 stop.addEventListener('click', function() {
     newTime = timerId
     clearInterval(timerId)
-    stop.style.visibility = "hidden";
-    play.style.display = "block";
+    
+    stop.textContent = "play"
+    stop.addEventListener('click',startGame)
+      
     
     
     }
 
 )
-play.addEventListener('click',startGame)
 
 
 document.addEventListener('keyup', control)

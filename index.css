@@ -2,7 +2,7 @@ html, body {
     margin: 10;
     padding: 10;
     text-align: center;
-    background-image: url("../SNAKEGAME/assets/images/snake2.jpg") ;
+    background-image: url("./assets/images/snake2.jpg") ;
     /* background: linear-gradient(to right,yellow,green); */
     /* background-blend-mode: color; */
     background-size: cover;
@@ -18,10 +18,10 @@ html, body {
     flex-wrap: wrap;
     width: 300px;
     height: 300px;
-    border: double 2px blueviolet;
-    box-shadow: 2px 2px  1px green;
+    border: double 2px rgb(60, 67, 51);
+    box-shadow: 2px 2px  5px green;
     margin: 0 auto;
-    background:  aquamarine;
+    background-color: rgb(75, 123, 75);
     border-radius: 5px;
     
     
@@ -31,14 +31,33 @@ html, body {
 
 
 h1{
-    color: white;
+    color: black;
+    text-decoration: underline;
     font-family: lora;
     font-weight: 700;
+    margin-bottom: 30px;
+
+}
+.head{
+    
+    font-size: 54px;
+    line-height: -1;
+    letter-spacing: -1;
+    padding: 6px;
+    border-radius: 6px;
+}
+#start,#stop{
+    padding: 10px;
+    border-radius: 5px;
+    background: black;
+
 }
 h2{
-    color: white;
+    color:black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 700;
+    font-weight: bold;
+    
+    
 }
 
 .square {
@@ -47,38 +66,37 @@ h2{
 }
 
 .snake {
-    background-color: green;
+    background-color:rgb(178, 227, 135);
+    ;
+
+
 }
 
 
 .apple {
-    background-color: orangered;
-    
+    background-color:rgb(178, 227, 135);
+    border-radius: 50%;
 }
 
 #start{
     border: none;
-    border-bottom: 2px solid green;
-    color: black;
+    border-bottom: 2px solid greenyellow;
+    color: white;
     font-weight: bold;
-    background: violet;
 }
 #stop, #play{
     font-size:18px;
     margin-top: 15px;
     border: none;
-    border-bottom: 2px solid green;
-    color: black;
+    border-bottom: 2px solid greenyellow;
+    color: white;
     font-weight: bold;
-    background: violet;
     padding: 8px 20px;
     
     
     
 }
-button:hover{
-    background: violet;
-}
-#play{
-    margin: 0 auto;
+#start:hover,#stop:hover{
+    background: green;
+    color:white;
 }
